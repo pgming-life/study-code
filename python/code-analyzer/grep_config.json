@@ -1,0 +1,13 @@
+{
+    "inputbox": {
+        "search": [
+            "DirectX"
+        ],
+        "path": [
+            "\\"
+        ],
+        "extension": [
+            "*.cpp"
+        ]
+    }
+}
