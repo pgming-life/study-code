@@ -12,6 +12,6 @@ It consists of the following directory structure.
 
 # Note
 
-Comments in this repository are unaware the Readable Coding.
-Also, the comments in the code are written in Japanese.
+Comments in this repository are unaware the Readable Coding.  
+Also, the comments in the code are written in Japanese.  
 I try to be as close to the truth as possible, but please understand that there is also the opinion of the author himself.
