@@ -5,31 +5,31 @@ This is the code snippet for low-end editor.
 
 ## Hotkey Functions
 ・if  
-Ctrl + Shift + I  
+Alt + Shift + I  
   
 ・else if  
-Ctrl + Shift + Alt + E  
+Ctrl + Alt + Shift + E  
   
 ・else  
-Ctrl + Shift + E  
+Alt + Shift + E  
   
 ・switch  
-Ctrl + Shift + Alt + S  
+Alt + Shift + Alt + S  
   
 ・for  
-Ctrl + Shift + F  
+Alt + Shift + F  
   
 ・while  
-Ctrl + Shift + W  
+Alt + Shift + W  
   
 ・struct  
-Ctrl + Shift + T  
+Alt + Shift + T  
   
 ・enum  
-Ctrl + Shift + Y  
+Alt + Shift + Y  
   
 ・class  
-Ctrl + Shift + U  
+Alt + Shift + U  
   
 ・インデントスペースの登録  
 Ctrl + Shift + N  
