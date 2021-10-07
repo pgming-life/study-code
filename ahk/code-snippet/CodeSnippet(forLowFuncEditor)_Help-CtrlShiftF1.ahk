@@ -18,12 +18,12 @@ global g_tab_space :=
 ;ヘルプ
 ^+F1::
     WinGet, active_id, ID, A
-    MsgBox, ＜ヘルプ＞`n`n------------------------------------------------------------------------------------------`n`n・if`nCtrl + Shift + I`n`n・else if`nCtrl + Shift + Alt + E`n`n・else`nCtrl + Shift + E`n`n・switch`nCtrl + Shift + Alt + S`n`n・for`nCtrl + Shift + F`n`n・while`nCtrl + Shift + W`n`n・struct`nCtrl + Shift + T`n`n・enum`nCtrl + Shift + Y`n`n・class`nCtrl + Shift + U`n`n------------------------------------------------------------------------------------------`n`n・インデントスペースの登録`nCtrl + Shift + N`n`n・インデントの出力`nCtrl + Shift + Enter`n`n※`n「インデントスペースの登録」は、「Shift + Home」のキーを送信し先頭スペースをコピーする。`nそれにより、「インデントの出力」で改行してからコピーした先頭スペースをペーストする。`n`n------------------------------------------------------------------------------------------`n`n・先頭に１つのタブを追加`nCtrl + Shift + J`n`n・１つのタブのスペース数を登録`nCtrl + Shift + Alt + K`n`n・先頭の１つのタブスペースを削除`nCtrl + Shift + K`n`n※`nタブスペース操作のJとKのホットキーはコピペによるインデントスペースの調整に用い、`n続けて各行で調整できるように処理の最後に「Down」と「Home」のキーを送信している。`n長押しや早い連打は厳禁。`n`n------------------------------------------------------------------------------------------`n`n・処理途中停止`nF8長押し
+    MsgBox, ＜ヘルプ＞`n`n------------------------------------------------------------------------------------------`n`n・if`nAlt + Shift + I`n`n・else if`nCtrl + Alt + Shift + E`n`n・else`nAlt + Shift + E`n`n・switch`nAlt + Shift + S`n`n・for`nAlt + Shift + F`n`n・while`nAlt + Shift + W`n`n・struct`nAlt + Shift + T`n`n・enum`nAlt + Shift + Y`n`n・class`nAlt + Shift + U`n`n------------------------------------------------------------------------------------------`n`n・インデントスペースの登録`nCtrl + Shift + N`n`n・インデントの出力`nCtrl + Shift + Enter`n`n※`n「インデントスペースの登録」は、「Shift + Home」のキーを送信し先頭スペースをコピーする。`nそれにより、「インデントの出力」で改行してからコピーした先頭スペースをペーストする。`n`n------------------------------------------------------------------------------------------`n`n・先頭に１つのタブを追加`nCtrl + Shift + J`n`n・１つのタブのスペース数を登録`nCtrl + Shift + Alt + K`n`n・先頭の１つのタブスペースを削除`nCtrl + Shift + K`n`n※`nタブスペース操作のJとKのホットキーはコピペによるインデントスペースの調整に用い、`n続けて各行で調整できるように処理の最後に「Down」と「Home」のキーを送信している。`n長押しや早い連打は厳禁。`n`n------------------------------------------------------------------------------------------`n`n・処理途中停止`nF8長押し
     WinActivate, ahk_id %active_id%
     Return
 
 ;if文
-^+I::
+!+I::
     ;現在のアクティブウィンドウのIDを取得
     WinGet, active_id, ID, A
     
@@ -70,7 +70,7 @@ global g_tab_space :=
     Return
 
 ;else if
-^+!E::
+^!+E::
     WinGet, active_id, ID, A
     def := InputDefine(active_id)
     If(!def)
@@ -94,7 +94,7 @@ global g_tab_space :=
     Return
 
 ;else
-^+E::
+!+E::
     WinGet, active_id, ID, A
     If(!CancelProcess(False))
         Return
@@ -112,7 +112,7 @@ global g_tab_space :=
     Return
 
 ;switch文
-^+!S::
+!+S::
     WinGet, active_id, ID, A
     g_active_id := active_id
     g_switch_flag := True
@@ -134,7 +134,7 @@ global g_tab_space :=
     Return
 
 ;for文
-^+F::
+!+F::
     WinGet, active_id, ID, A
     def := InputDefine(active_id)
     If(!def)
@@ -158,7 +158,7 @@ global g_tab_space :=
     Return
 
 ;while文
-^+W::
+!+W::
     WinGet, active_id, ID, A
     def := InputDefine(active_id)
     If(!def)
@@ -182,7 +182,7 @@ global g_tab_space :=
     Return
 
 ;構造体
-^+T::
+!+T::
     WinGet, active_id, ID, A
     Loop
     {
@@ -220,7 +220,7 @@ global g_tab_space :=
     Return
 
 ;列挙体
-^+Y::
+!+Y::
     WinGet, active_id, ID, A
     Loop
     {
@@ -258,7 +258,7 @@ global g_tab_space :=
     Return
 
 ;クラス
-^+U::
+!+U::
     WinGet, active_id, ID, A
     g_active_id := active_id
     g_class_flag := True
