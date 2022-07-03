@@ -1,4 +1,4 @@
-# Study codes
+# Study codes &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/pgming-life/study-code/blob/main/LICENSE)
 
 The code for each program covers minimal learning.  
 It consists of the following directory structure.
