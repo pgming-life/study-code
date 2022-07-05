@@ -1,4 +1,6 @@
-# Study codes
+# Study codes from [PGming->Ctrl](https://pgming-ctrl.com/)
+
+![pgming-ctrl](https://user-images.githubusercontent.com/84230279/126891296-ea824352-782e-432a-8306-25a596b67853.png)
 
 The code for each program covers minimal learning.  
 It consists of the following directory structure.
